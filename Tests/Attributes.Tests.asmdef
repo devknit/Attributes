@@ -1,0 +1,15 @@
+{
+    "name": "Attributes.Tests",
+    "references": [
+        "GUID:60a3f35cccc2ffd4bbb5922d4bde5c8e"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

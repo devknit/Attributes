@@ -1,0 +1,13 @@
+{
+  "name": "com.devknit.attributes",
+  "displayName": "Attributes",
+  "version": "1.0.0",
+  "unity": "2019.3",
+  "description": "Attributes is an extension for the Unity Inspector.",
+  "keywords": [
+    "attribute",
+    "inspector",
+    "editor"
+  ],
+  "category": "editor extensions"
+}

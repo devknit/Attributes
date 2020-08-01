@@ -1,0 +1,7 @@
+﻿
+namespace Attributes
+{
+	interface IAttribute
+	{
+	}
+}
