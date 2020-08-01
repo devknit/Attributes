@@ -4,9 +4,9 @@ using System.Collections.Generic;
 
 namespace Attributes.Tests
 {
+#pragma warning disable 414
 	public sealed class DropdownTest : MonoBehaviour
 	{
-	#pragma warning disable 414
 		[Dropdown( "kIntValues")]
 		public int intValue;
 		[Dropdown( "StringValues")]
@@ -35,6 +35,6 @@ namespace Attributes.Tests
 		{
 			get{ return new []{ TestEnum.kC, TestEnum.kE }; }
 		}
-	#pragma warning restore 414
 	}
+#pragma warning restore 414
 }

@@ -3,15 +3,15 @@ using UnityEngine;
 
 namespace Attributes.Tests
 {
+#pragma warning disable 414
 	public sealed class SceneTest : MonoBehaviour
 	{
-	#pragma warning disable 414
-		[SerializeField , Scene]
-		string scene0 = default;
-		[SerializeField, Scene]
-		internal int scene1 = default;
+		[Scene]
+		public string scene0;
+		[Scene]
+		public int scene1;
 		[Scene]
 		public string scene2;
-	#pragma warning restore 414
 	}
+#pragma warning restore 414
 }

@@ -3,9 +3,9 @@ using UnityEngine;
 
 namespace Attributes.Tests
 {
+#pragma warning disable 414
 	public sealed class LineTest : MonoBehaviour
 	{
-	#pragma warning disable 414
 		[Line( color: ConstColor.kBlack), Header( "Black")]
 		[Line( color: ConstColor.kBlue), Header( "Blue")]
 		[Line( color: ConstColor.kGray), Header( "Gray")]
@@ -19,6 +19,6 @@ namespace Attributes.Tests
 		[Line( color: ConstColor.kYellow), Header( "Yellow")]
 		[Line( 10.0f), Header( "Thickness 10")]
 		public int line0;
-	#pragma warning restore 414
 	}
+#pragma warning restore 414
 }

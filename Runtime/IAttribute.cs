@@ -1,7 +1,7 @@
 ﻿
 namespace Attributes
 {
-	interface IAttribute
+	public interface IAttribute
 	{
 	}
 }

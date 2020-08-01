@@ -3,6 +3,7 @@ using UnityEngine;
 
 namespace Attributes.Tests
 {
+#pragma warning disable 414
 	public enum TestEnum : int
 	{
 		kNone = 0,
@@ -15,13 +16,12 @@ namespace Attributes.Tests
 	}
 	public sealed class EnumFlagsTest : MonoBehaviour
 	{
-	#pragma warning disable 414
-		[SerializeField , EnumFlags]
-		TestEnum flags0 = default;
-		[SerializeField, EnumFlags]
-		internal TestEnum flags1 = default;
+		[EnumFlags]
+		public TestEnum flags0;
+		[EnumFlags]
+		public TestEnum flags1;
 		[EnumFlags]
 		public TestEnum flags2;
-	#pragma warning restore 414
 	}
+#pragma warning restore 414
 }

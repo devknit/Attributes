@@ -3,25 +3,21 @@ using UnityEngine;
 
 namespace Attributes.Tests
 {
+#pragma warning disable 414
 	public sealed class LabelTest : MonoBehaviour
 	{
-		[SerializeField, Label( "Label 0")]
-		internal int int0 = default;
+		[Label( "Label 0")]
+		public int int0;
 		[SerializeField]
-		internal LabelNest1 nest1 = default;
+		LabelNest1 nest1;
 	}
 	[System.Serializable]
 	public class LabelNest1
 	{
-		[SerializeField, Label( "Label 1"), AllowNesting] /*!< 明示的に入れ子を許可する必要があります */
-		internal int int1 = default;
-		[SerializeField]
-		internal LabelNest2 nest2 = default;
+		[AllowNesting, Label( "Label 1")] /*!< 明示的に入れ子を許可する必要があります */
+		public int int1;
+		[AllowNesting, Label( "Label 2")] /*!< 明示的に入れ子を許可する必要があります */
+		public int int2;
 	}
-	[System.Serializable]
-	public class LabelNest2
-	{
-		[Label( "Label 2"), MinMaxSlider( 0, 1)] /*!< MinMaxSlider でマークされているため AllowNesting 属性は必要ありません */
-		public Vector2 vector2;
-	}
+#pragma warning restore 414
 }

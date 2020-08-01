@@ -3,15 +3,15 @@ using UnityEngine;
 
 namespace Attributes.Tests
 {
+#pragma warning disable 414
 	public sealed class InputAxisTest : MonoBehaviour
 	{
-	#pragma warning disable 414
-		[SerializeField , InputAxis]
-		string inputAxis0 = default;
-		[SerializeField, InputAxis]
-		internal string inputAxis1 = default;
+		[InputAxis]
+		public string inputAxis0;
+		[InputAxis]
+		public string inputAxis1;
 		[InputAxis]
 		public string inputAxis2;
-	#pragma warning restore 414
 	}
+#pragma warning restore 414
 }

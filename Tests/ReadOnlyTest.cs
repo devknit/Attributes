@@ -3,15 +3,15 @@ using UnityEngine;
 
 namespace Attributes.Tests
 {
+#pragma warning disable 414
 	public sealed class ReadOnlyTest : MonoBehaviour
 	{
-	#pragma warning disable 414
-		[SerializeField , ReadOnly]
-		int readOnlyInteger = 16;
-		[SerializeField, ReadOnly]
-		internal float readOnlyFloat = 3.14159265f;
+		[ReadOnly]
+		public int readOnlyInteger = 16;
+		[ReadOnly]
+		public float readOnlyFloat = 3.14159265f;
 		[ReadOnly]
 		public string readOnlyString;
-	#pragma warning restore 414
 	}
+#pragma warning restore 414
 }

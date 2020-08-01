@@ -3,15 +3,15 @@ using UnityEngine;
 
 namespace Attributes.Tests
 {
+#pragma warning disable 414
 	public sealed class AssetPreviewTest : MonoBehaviour
 	{
-	#pragma warning disable 414
-		[SerializeField , AssetPreview]
+		[AssetPreview]
 		public Sprite sprite0;
-		[SerializeField , AssetPreview( 96, 96)]
+		[AssetPreview( 96, 96)]
 		public GameObject prefab0;
-		[SerializeField , AssetPreview( 128, 128)]
+		[AssetPreview( 128, 128)]
 		public Transform test0;
-	#pragma warning restore 414
 	}
+#pragma warning restore 414
 }

@@ -6,7 +6,10 @@ namespace Attributes
 	[AttributeUsage( AttributeTargets.Field, AllowMultiple = true, Inherited = true)]
 	public sealed class LineAttribute : DrawerAttribute
 	{
-		public LineAttribute( float thickness=1.0f, ConstColor color=default)
+		public const float kDefaultThickness = 1.0f;
+		public const ConstColor kDefaultColor = default;
+		
+		public LineAttribute( float thickness=kDefaultThickness, ConstColor color=kDefaultColor)
 		{
 			Thickness = thickness;
 			Color = color;
