@@ -50,7 +50,7 @@ namespace Attributes.Editor
 					else
 					{
 						string message = string.Format(
-							"{0} can invoke only methods with 'void' return type and 0 parameters",
+							"{0} は戻り値の型がvoidで引数が無いメソッドのみ呼び出すことが出来ます",
 							onValueChangedAttribute.GetType().Name);
 
 						Debug.LogWarning( message, property.serializedObject.targetObject);
@@ -75,7 +75,7 @@ namespace Attributes.Editor
 			}
 			
 			string message = string.Format(
-				"{0} needs a valid boolean condition field, property or method name to work",
+				"{0} が機能するにはbool型のフィールド/プロパティ/メソッドが必要です",
 				enableIfAttribute.GetType().Name);
 			Debug.LogWarning( message, property.serializedObject.targetObject);
 			
@@ -98,7 +98,7 @@ namespace Attributes.Editor
 			}
 			
 			string message = string.Format(
-				"{0} needs a valid boolean condition field, property or method name to work",
+				"{0} が機能するにはbool型のフィールド/プロパティ/メソッドが必要です",
 				showIfAttribute.GetType().Name);
 			Debug.LogWarning( message, property.serializedObject.targetObject);
 			
